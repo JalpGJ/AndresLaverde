@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function() {
         if(scrollY>0 ){
             header.style.backgroundColor = "white"
             headerLogo.style.color = "black"
-            header__boton__burger.setAttribute("src", "/img/burgerblack.png")
+            header__boton__burger.setAttribute("src", "./img/burgerblack.png")
         }
         else{
             header.style.backgroundColor = "transparent"
             headerLogo.style.color = "white"
-            header__boton__burger.setAttribute("src", "/img/burgerwhite.png")
+            header__boton__burger.setAttribute("src", "./img/burgerwhite.png")
         }
     }else{
         header.style.backgroundColor = "white"
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
             Xactive = false;
             header__menu.classList.add("header__menu")
             header__menu.classList.remove("inactive")
-            header__boton__burger.setAttribute("src", "/img/x.png")
+            header__boton__burger.setAttribute("src", "./img/x.png")
             
         }
         else{
@@ -43,12 +43,12 @@ document.addEventListener("DOMContentLoaded", function() {
             if(scrollY>0){
                 header.style.backgroundColor = "white"
                 headerLogo.style.color = "black"
-                header__boton__burger.setAttribute("src", "/img/x.png")
+                header__boton__burger.setAttribute("src", "./img/x.png")
             }
             else{
                 header.style.backgroundColor = "transparent"
                 headerLogo.style.color = "white"
-                header__boton__burger.setAttribute("src", "/img/burgerwhite.png")
+                header__boton__burger.setAttribute("src", "./img/burgerwhite.png")
             }
             
             Xactive = true;

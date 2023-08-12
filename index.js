@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(scrollY>0){
                 header.style.backgroundColor = "white"
                 headerLogo.style.color = "black"
-                header__boton__burger.setAttribute("src", "./img/x.png")
+                header__boton__burger.setAttribute("src", "./img/burgerblack.png")
             }
             else{
                 header.style.backgroundColor = "transparent"

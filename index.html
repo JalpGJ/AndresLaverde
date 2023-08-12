@@ -9,36 +9,37 @@
     <link
         href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700%7CMontserrat:400,700%7CEczar:400,500,600,700,800"
         rel="stylesheet">
+    <script src="./index.js"></script>
 </head>
 
 <body>
-    <header>
-        <p class="header__logo">
+    <header id="header">
+        <p id="header__logo" class="header__logo">
             AL
         </p>
-        <div class="header__boton">
-            <img class="header__boton__burger" src="./img/burgerwhite.png" alt="">
+        <div id="header__boton" class="header__boton">
+            <img id="header__boton__burger" class="header__boton__burger" src="./img/burgerwhite.png" alt="">
             <img class="header__boton__x" src="" alt="">
         </div>
-        <div class="header__menu">
-            <a href="">ABOUT</a>
-            <a href="">SKILLS</a>
-            <a href="">PORTFOLIO</a>
-            <a href="">CONTACT</a>
+        <div id="header__menu" class="inactive">
+            <a href="#presentation">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#contact">CONTACT</a>
         </div>
-        <div class="header__menu__desktop">
+        <div id="header__menu__desktop" class="header__menu__desktop">
             <a href="">ABOUT</a>
             <a href="">SKILLS</a>
             <a href="">PORTFOLIO</a>
             <a href="">CONTACT</a>
         </div>
     </header>
-    <section class="profession">
+    <section id="profession" class="profession">
         <p class="profession__title">WEB DEVELOPER</p>
         <span class="profession__title">|</span>
         <img class="profession__arrow" src="" alt="">
     </section>
-    <section class="presentation">
+    <section id="presentation" class="presentation">
         <h1 class="presentation__name">
             I'm Andres Laverde, Web Designer & Web Developer from Colombia, Bogotá
         </h1>
@@ -47,9 +48,10 @@
             experience covers a variety of languages, including HTML, CSS, JavaScript, C#, and .NET. I am a self-taught
             programmer with a remarkable learning ability.
         </p>
-        <a class="presentation__download" href="">DOWNLOAD RESUME</a>
+        <a href="./documents/CV-ANDRES-LAVERDE.docx" download target="_blank" class="presentation__download">DOWNLOAD
+            RESUME</a>
     </section>
-    <section class="skills">
+    <section id="skills" class="skills">
         <p class="skills__title">
             Skills
         </p>
@@ -72,7 +74,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <p class="portfolio__title">Portfolio</p>
         <div class="portfolio__filter">
             <a class="portfolio__filter__web" href="">Web Development</a>
@@ -101,7 +103,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
         <p class="contact__title">
             Contact me
         </p>

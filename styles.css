@@ -88,9 +88,9 @@ padding: 90px 16px;
 }
 .skills__section{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
 }
 .skills__subsection{
     display: flex;
@@ -107,6 +107,11 @@ padding: 90px 16px;
 }
 .portfolio{
     padding: 90px 16px;
+}
+.portfolio__section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .portfolio__title{
     font-family: Eczar;
@@ -131,14 +136,19 @@ padding: 90px 16px;
 .portfolio__filter{
     margin: 30px 0;
 }
-.section__item__img{
+.portfolio__section__item{
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
+/* .section__item__img{
+    width: 100%;
+} */
 .section__item__contain{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-right: 20px;
+    padding: 5px 10px;
     margin: 0px 0 40px 0;
 
 }
@@ -198,7 +208,6 @@ padding: 90px 16px;
     color:#292929 ;
     font-size: 12px;
     cursor: pointer;
-    background-color: white;
     border: none;
 }
 .footer{
@@ -210,10 +219,10 @@ padding: 90px 16px;
 }
 .footer__social{
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
 }
 .footer__social__img{
-    width: 20px;
+    width: 30px;
 }
 .header__menu{
     display: flex;
@@ -241,3 +250,91 @@ padding: 90px 16px;
 .inactive{
     display: none;
 }
+@media (min-width: 768px) {
+    
+    .presentation{
+        padding: 90px 50px;
+    }
+    .skills{
+        padding: 90px 50px;
+    }
+    .portfolio{
+        padding: 90px 50px;
+    }
+    .contact{
+        padding: 90px 50px;
+    }
+    .section__item__img{
+        width: 100%;
+    }
+    .portfolio__section__item{
+        width: 48%;
+    }
+
+  }
+  @media (min-width: 1079px) {
+    .presentation__name{
+        font-size: 52px;
+        line-height: 64px;
+        width: 80%;
+    }
+    .presentation__description{
+        font-size: 20px;
+        line-height: 34px;
+        width: 80%;
+    }
+    .presentation__download{
+        font-size: 14px;
+    }
+    .skills__title{
+        font-size: 34px;
+    line-height: 44px;
+    font-weight: 400;
+    }
+    .portfolio__title{
+        font-size: 34px;
+    line-height: 44px;
+    font-weight: 400;
+    }
+    .contact__title{
+        font-size: 34px;
+        line-height: 44px;
+        font-weight: 400;
+
+    }
+    .portfolio__filter__web{
+        font-size: 20px;
+        line-height: 16px;
+    }
+    .portfolio__filter__ui{
+        font-size: 20px;
+        line-height: 16px;
+    }
+    .section__item__title{
+        font-size: 28px;
+    }
+    .section__item__filter{
+        font-size: 14px;
+        line-height: 12px;
+    }
+    .contact input{
+        font-size: 14px;
+    color: #292929;
+    letter-spacing: 0.03em;
+    }
+    textarea{
+        font-size: 14px;
+        color: #292929;
+        letter-spacing: 0.03em;
+    }
+    .contact__button{
+        font-size: 14px;
+    }
+    
+
+  }
+  @media (min-width: 1530px) {
+
+  }
+
+    

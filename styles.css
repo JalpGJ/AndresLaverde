@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header{
+header {
     position: fixed;
     width: 100%;
     height: 85px;
@@ -13,29 +13,29 @@ header{
     padding: 0 20px;
     justify-content: space-between;
 }
-.header__logo{
+.header__logo {
     font-family: Montserrat;
     font-weight: 700;
     font-size: 25px;
     text-decoration: none;
     color: white;
 }
-.header__boton{
+.header__boton {
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
 }
-.header__boton__burger{
+.header__boton__burger {
     width: 30px;
 }
-.header__menu{
+.header__menu {
     display: none;
 }
-.header__menu__desktop{
+.header__menu__desktop {
     display: none;
 }
-.profession{
+.profession {
     background-image: url(./img/developer.jpg);
     height: 100vh;
     width: 100%;
@@ -47,138 +47,145 @@ header{
     justify-content: center;
     color: white;
 }
-.profession__title{
+.profession__title {
     text-align: center;
     font-family: Montserrat;
     font-weight: 700;
     font-size: 24px;
 }
-.presentation{
+.presentation {
     background-color: #ffffff;
     padding: 90px 16px;
 }
-.presentation__name{
+.presentation__name {
     font-family: Eczar;
     font-size: 28px;
     font-weight: 400;
     margin-bottom: 28px;
     line-height: 40px;
 }
-.presentation__description{
+.presentation__description {
     font-family: Hind;
     font-size: 17px;
     line-height: 30px;
     color: #999999;
     margin-bottom: 17px;
 }
-.presentation__download{
-    color:#292929 ;
+.presentation__download {
+    color: #292929;
     font-size: 12px;
     cursor: pointer;
 }
-.skills{
-background-color: #f9f9f9;
-padding: 90px 16px;
+.skills {
+    background-color: #f9f9f9;
+    padding: 90px 16px;
 }
-.skills__title{
+.skills__title {
     font-family: Eczar;
     font-size: 28px;
     font-weight: 400;
     margin-bottom: 30px;
 }
-.skills__section{
+.skills__section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-.skills__subsection{
+.skills__subsection {
     display: flex;
     width: 100%;
     justify-content: center;
     margin: 10px 0;
 }
-.skills__subsection__img{
+.skills__subsection__img {
     width: 100px;
     height: 100px;
     object-fit: contain;
     padding: 10px 20px;
-    
 }
-.portfolio{
+.portfolio {
     padding: 90px 16px;
 }
-.portfolio__section{
+.portfolio__section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.portfolio__title{
+.portfolio__title {
     font-family: Eczar;
     font-size: 28px;
     font-weight: 400;
 }
-.portfolio__filter__web{
+.portfolio__filter__web {
     font-family: Hind;
     color: #292929;
     text-decoration: none;
     font-size: 15px;
     margin: 0 30px 15px 0;
+    cursor: pointer;
 }
-.portfolio__filter__ui{
+.portfolio__filter__ui {
     font-family: Hind;
     color: #999999;
     text-decoration: none;
     font-size: 15px;
     margin: 0 30px 15px 0;
+    cursor: pointer;
 }
 
-.portfolio__filter{
+.portfolio__filter {
     margin: 30px 0;
 }
-.portfolio__section__item{
+.portfolio__section__item {
     display: flex;
     flex-direction: column;
     width: 100%;
+    text-decoration: none;
 }
-/* .section__item__img{
-    width: 100%;
-} */
-.section__item__contain{
+.item__contain__imgs {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    justify-content: space-around;
+}
+.section__item__img {
+    object-fit: cover;
+}
+.section__item__contain {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 5px 10px;
     margin: 0px 0 40px 0;
-
 }
-.section__item__filter{
+.section__item__filter {
     font-family: Hind;
     font-size: 12px;
     color: #898989;
 }
-.section__item__title{
+.section__item__title {
     font-family: Hind;
     font-size: 22px;
     color: #292929;
 }
-.item__contain__skill{
-    width: 15px;
+.item__contain__skill {
+    width: 20px;
     object-fit: contain;
 }
-.contact{
+.contact {
     background-color: #f9f9f9;
     padding: 90px 16px;
     display: flex;
     flex-direction: column;
 }
-.contact__title{
+.contact__title {
     font-family: Eczar;
     font-size: 28px;
     font-weight: 400;
     margin-bottom: 30px;
 }
-.contact input{
+.contact input {
     height: 48px;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -191,7 +198,7 @@ padding: 90px 16px;
     line-height: 20px;
     margin-bottom: 25px;
 }
-.contact textarea{
+.contact textarea {
     height: 100px;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -204,27 +211,27 @@ padding: 90px 16px;
     line-height: 20px;
     margin-bottom: 25px;
 }
-.contact__button{
-    color:#292929 ;
+.contact__button {
+    color: #292929;
     font-size: 12px;
     cursor: pointer;
     border: none;
 }
-.footer{
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f9f9f9;
     padding: 90px 16px;
 }
-.footer__social{
+.footer__social {
     text-decoration: none;
     padding: 20px;
 }
-.footer__social__img{
+.footer__social__img {
     width: 30px;
 }
-.header__menu{
+.header__menu {
     display: flex;
     position: absolute;
     top: 0;
@@ -237,7 +244,7 @@ padding: 90px 16px;
     padding: 100px 30px;
     z-index: 0;
 }
-.header__menu a{
+.header__menu a {
     color: black;
     margin-bottom: 25px;
     font-family: Hind;
@@ -247,47 +254,59 @@ padding: 90px 16px;
     line-height: 12px;
     letter-spacing: 0.2em;
 }
-.inactive{
+.inactive {
+    display: none;
+}
+.portfolio__section__ui {
     display: none;
 }
 @media (min-width: 768px) {
-    
-    .presentation{
+    .presentation {
         padding: 90px 50px;
     }
-    .skills{
+    .skills {
         padding: 90px 50px;
     }
-    .portfolio{
+    .portfolio {
         padding: 90px 50px;
     }
-    .contact{
+    .contact {
         padding: 90px 50px;
     }
-    .section__item__img{
+    .section__item__img {
         width: 100%;
+        height: 200px;
+        object-fit: cover;
     }
-    .portfolio__section__item{
+    .portfolio__section__item {
         width: 48%;
     }
+}
 
-  }
-  @media (min-width: 1079px) {
-    header{
+@media (min-width: 900px) {
+    .section__item__img {
+        width: 100%;
+        height: 235px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1079px) {
+    header {
         height: 100px;
     }
-    .header__boton{
+    .header__boton {
         display: none;
     }
-    .header__menu{
+    .header__menu {
         display: none;
     }
-    .header__menu__desktop{
+    .header__menu__desktop {
         display: flex;
         color: white;
     }
 
-    .menu__desktop__a{
+    .menu__desktop__a {
         color: white;
         font-family: Hind;
         font-size: 12px;
@@ -296,93 +315,99 @@ padding: 90px 16px;
         font-weight: bold;
         line-height: 12px;
     }
-    .profession__title{
+    .profession__title {
         font-size: 50px;
     }
-    header{
+    header {
         padding: 0 50px;
     }
-    .presentation__name{
+    .presentation__name {
         font-size: 52px;
         line-height: 64px;
         width: 80%;
     }
-    .presentation__description{
+    .presentation__description {
         font-size: 20px;
         line-height: 34px;
         width: 80%;
     }
-    .presentation__download{
+    .presentation__download {
         font-size: 14px;
     }
-    .skills__title{
-        font-size: 34px;
-    line-height: 44px;
-    font-weight: 400;
-    }
-    .portfolio__title{
-        font-size: 34px;
-    line-height: 44px;
-    font-weight: 400;
-    }
-    .contact__title{
+    .skills__title {
         font-size: 34px;
         line-height: 44px;
         font-weight: 400;
-
     }
-    .portfolio__filter__web{
+    .portfolio__title {
+        font-size: 34px;
+        line-height: 44px;
+        font-weight: 400;
+    }
+    .contact__title {
+        font-size: 34px;
+        line-height: 44px;
+        font-weight: 400;
+    }
+    .portfolio__filter__web {
         font-size: 20px;
         line-height: 16px;
     }
-    .portfolio__filter__ui{
+    .portfolio__filter__ui {
         font-size: 20px;
         line-height: 16px;
     }
-    .section__item__title{
+    .section__item__title {
         font-size: 28px;
     }
-    .section__item__filter{
+    .section__item__filter {
         font-size: 14px;
         line-height: 12px;
     }
-    .contact input{
-        font-size: 14px;
-    color: #292929;
-    letter-spacing: 0.03em;
+    .section__item__img {
+        width: 100%;
+        height: 274px;
+        object-fit: cover;
     }
-    textarea{
+    .contact input {
         font-size: 14px;
         color: #292929;
         letter-spacing: 0.03em;
     }
-    .contact__button{
+    textarea {
+        font-size: 14px;
+        color: #292929;
+        letter-spacing: 0.03em;
+    }
+    .contact__button {
         font-size: 14px;
     }
-    
+}
+@media (min-width: 1300px) {
+    .section__item__img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
 
-  }
-  @media (min-width: 1530px) {
-    .profession__title{
+@media (min-width: 1530px) {
+    .profession__title {
         font-size: 70px;
     }
-    header{
+    header {
         padding: 0 75px;
-        
     }
-    .presentation{
-        padding: 140px 255px ;
+    .presentation {
+        padding: 140px 255px;
     }
-    .skills{
-        padding: 140px 255px ;
+    .skills {
+        padding: 140px 255px;
     }
-    .portfolio{
-        padding: 140px 255px ;
+    .portfolio {
+        padding: 140px 255px 100px 255px;
     }
-    .contact{
-        padding: 140px 255px 0 255px ;
+    .contact {
+        padding: 140px 255px 0 255px;
     }
-    
-  }
-
-    
+}

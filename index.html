@@ -1,147 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700%7CMontserrat:400,700%7CEczar:400,500,600,700,800"
+            rel="stylesheet"
+        />
+        <script src="./index.js"></script>
+        <title>Andres Laverde - Web Developer</title>
+        <meta
+            name="description"
+            content="Soy Andrés Laverde, Web Developer. Explora mis habilidades, navega por mi portafolio y descubre cómo construyo experiencias web únicas y cautivadoras."
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andres Laverde CV</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700%7CMontserrat:400,700%7CEczar:400,500,600,700,800"
-        rel="stylesheet">
-    <script src="./index.js"></script>
-</head>
-
-<body>
-    <header id="header">
-        <a href="./index.html" id="header__logo" class="header__logo">
-            AL
-        </a>
-        <div id="header__boton" class="header__boton">
-            <img id="header__boton__burger" class="header__boton__burger" src="./img/burgerwhite.png" alt="">
-            <img class="header__boton__x" src="" alt="">
-        </div>
-        <div id="header__menu" class="inactive">
-            <a href="#presentation">ABOUT</a>
-            <a href="#skills">SKILLS</a>
-            <a href="#portfolio">PORTFOLIO</a>
-            <a href="#contact">CONTACT</a>
-        </div>
-        <div id="header__menu__desktop" class="header__menu__desktop">
-            <a class="menu__desktop__a" id="menu__desktop__a1" href="#presentation">ABOUT</a>
-            <a class="menu__desktop__a" id="menu__desktop__a2" href="#skills">SKILLS</a>
-            <a class="menu__desktop__a" id="menu__desktop__a3" href="#portfolio">PORTFOLIO</a>
-            <a class="menu__desktop__a" id="menu__desktop__a4" href="#contact">CONTACT</a>
-        </div>
-    </header>
-    <section id="profession" class="profession">
-        <p class="profession__title">WEB DEVELOPER</p>
-        <span class="profession__title">|</span>
-        <img class="profession__arrow" src="" alt="">
-    </section>
-    <section id="presentation" class="presentation">
-        <h1 class="presentation__name">
-            I'm Andres Laverde, Web Designer & Web Developer from Colombia, Bogotá
-        </h1>
-        <p class="presentation__description">
-            I am professional in Multimedia Engineering, and I envision myself as a Full Stack web developer. My
-            experience covers a variety of languages, including HTML, CSS, JavaScript, C#, and .NET. I am a self-taught
-            programmer with a remarkable learning ability.
-        </p>
-        <a href="./documents/CV-ANDRES-LAVERDE.docx" download target="_blank" class="presentation__download">DOWNLOAD
-            RESUME</a>
-    </section>
-    <section id="skills" class="skills">
-        <p class="skills__title">
-            Skills
-        </p>
-        <div class="skills__section">
-
-            <img class="skills__subsection__img" src="./img/html.png" alt="">
-            <img class="skills__subsection__img" src="./img/css.png" alt="">
-            <img class="skills__subsection__img" src="./img/javascript.png" alt="">
-            <img class="skills__subsection__img" src="./img/figma.png" alt="">
-            <img class="skills__subsection__img" src="./img/xd.png" alt="">
-            <img class="skills__subsection__img" src="./img/git.png" alt="">
-
-            <img class="skills__subsection__img" src="./img/bootstrap.png" alt="">
-            <img class="skills__subsection__img" src="./img/react.png" alt="">
-
-        </div>
-    </section>
-    <section id="portfolio" class="portfolio">
-        <p class="portfolio__title">Portfolio</p>
-        <div class="portfolio__filter">
-            <a class="portfolio__filter__web" href="">Web Development</a>
-            <a class="portfolio__filter__ui" href="">UI Design</a>
-        </div>
-        <div class="portfolio__section">
-            <div class="portfolio__section__item">
-                <img class="section__item__img" src="./img/Flivy1.png" alt="">
-                <div class="section__item__contain">
-                    <div class="item__contain__text">
-                        <p class="section__item__title">Flivy App</p>
-                        <p class="section__item__filter">UI Design</p>
+    <body>
+        <header id="header">
+            <a href="./index.html" id="header__logo" class="header__logo">
+                AL
+            </a>
+            <div id="header__boton" class="header__boton">
+                <img
+                    id="header__boton__burger"
+                    class="header__boton__burger"
+                    src="./img/burgerwhite.png"
+                    alt=""
+                />
+                <img class="header__boton__x" src="" alt="" />
+            </div>
+            <div id="header__menu" class="inactive">
+                <a href="#presentation">ABOUT</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+            <div id="header__menu__desktop" class="header__menu__desktop">
+                <a
+                    class="menu__desktop__a"
+                    id="menu__desktop__a1"
+                    href="#presentation"
+                    >ABOUT</a
+                >
+                <a
+                    class="menu__desktop__a"
+                    id="menu__desktop__a2"
+                    href="#skills"
+                    >SKILLS</a
+                >
+                <a
+                    class="menu__desktop__a"
+                    id="menu__desktop__a3"
+                    href="#portfolio"
+                    >PORTFOLIO</a
+                >
+                <a
+                    class="menu__desktop__a"
+                    id="menu__desktop__a4"
+                    href="#contact"
+                    >CONTACT</a
+                >
+            </div>
+        </header>
+        <section id="profession" class="profession">
+            <p class="profession__title">WEB DEVELOPER</p>
+            <span class="profession__title">|</span>
+            <img class="profession__arrow" src="" alt="" />
+        </section>
+        <section id="presentation" class="presentation">
+            <h1 class="presentation__name">
+                I'm Andres Laverde, Web Designer & Web Developer from Colombia,
+                Bogotá
+            </h1>
+            <p class="presentation__description">
+                I am professional in Multimedia Engineering, and I envision
+                myself as a Full Stack web developer. My experience covers a
+                variety of languages, including HTML, CSS, JavaScript, C#, and
+                .NET. I am a self-taught programmer with a remarkable learning
+                ability.
+            </p>
+            <a
+                href="./documents/CV-ANDRES-LAVERDE.docx"
+                download
+                target="_blank"
+                class="presentation__download"
+                >DOWNLOAD RESUME</a
+            >
+        </section>
+        <section id="skills" class="skills">
+            <p class="skills__title">Skills</p>
+            <div class="skills__section">
+                <img
+                    class="skills__subsection__img"
+                    src="./img/html.png"
+                    alt=""
+                />
+                <img
+                    class="skills__subsection__img"
+                    src="./img/css.png"
+                    alt=""
+                />
+                <img
+                    class="skills__subsection__img"
+                    src="./img/javascript.png"
+                    alt=""
+                />
+                <img
+                    class="skills__subsection__img"
+                    src="./img/figma.png"
+                    alt=""
+                />
+                <img
+                    class="skills__subsection__img"
+                    src="./img/xd.png"
+                    alt=""
+                />
+                <img
+                    class="skills__subsection__img"
+                    src="./img/git.png"
+                    alt=""
+                />
+                <img
+                    class="skills__subsection__img"
+                    src="./img/bootstrap.png"
+                    alt=""
+                />
+                <img
+                    class="skills__subsection__img"
+                    src="./img/react.png"
+                    alt=""
+                />
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <p class="portfolio__title">Portfolio</p>
+            <div class="portfolio__filter">
+                <a class="portfolio__filter__web" id="portfolio__filter__web"
+                    >Web Development</a
+                >
+                <a class="portfolio__filter__ui" id="portfolio__filter__ui"
+                    >UI Design</a
+                >
+            </div>
+            <div
+                class="portfolio__section portfolio__section__web"
+                id="portfolio__section__web"
+            >
+                <a
+                    class="portfolio__section__item"
+                    href="https://jalpgj.github.io/PlatziConf-Hawaii/"
+                    target="_blank"
+                >
+                    <img
+                        class="section__item__img"
+                        src="./img/PlatziConf.png"
+                        alt=""
+                    />
+                    <div class="section__item__contain">
+                        <div class="item__contain__text">
+                            <p class="section__item__title">
+                                PlatziConf Hawaii
+                            </p>
+                            <p class="section__item__filter">Web Development</p>
+                        </div>
+                        <div class="item__contain__imgs">
+                            <img
+                                class="item__contain__skill"
+                                src="./img/html.png"
+                                alt=""
+                            />
+                            <img
+                                class="item__contain__skill"
+                                src="./img/css.png"
+                                alt=""
+                            />
+                            <img
+                                class="item__contain__skill"
+                                src="./img/bootstrap.png"
+                                alt=""
+                            />
+                        </div>
                     </div>
-                    <img class="item__contain__skill" src="./img/figma.png" alt="">
+                </a>
+                <a
+                    class="portfolio__section__item"
+                    href="https://jalpgj.github.io/Batatabit-MobileFirst/"
+                    target="_blank"
+                >
+                    <img
+                        class="section__item__img"
+                        src="./img/Batatabit.png"
+                        alt=""
+                    />
+                    <div class="section__item__contain">
+                        <div class="item__contain__text">
+                            <p class="section__item__title">
+                                Batatabit Mobile First
+                            </p>
+                            <p class="section__item__filter">Web Development</p>
+                        </div>
+                        <div class="item__contain__imgs">
+                            <img
+                                class="item__contain__skill"
+                                src="./img/html.png"
+                                alt=""
+                            />
+                            <img
+                                class="item__contain__skill"
+                                src="./img/css.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </a>
+                <a
+                    class="portfolio__section__item"
+                    href="https://jalpgj.github.io/Flivy/"
+                    target="_blank"
+                >
+                    <img
+                        class="section__item__img"
+                        src="./img/Flivy Web.png"
+                        alt=""
+                    />
+                    <div class="section__item__contain">
+                        <div class="item__contain__text">
+                            <p class="section__item__title">Flivy Web</p>
+                            <p class="section__item__filter">Web Development</p>
+                        </div>
+                        <div class="item__contain__imgs">
+                            <img
+                                class="item__contain__skill"
+                                src="./img/html.png"
+                                alt=""
+                            />
+                            <img
+                                class="item__contain__skill"
+                                src="./img/css.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </a>
+                <a
+                    class="portfolio__section__item"
+                    href="https://jalpgj.github.io/Test-3D/"
+                    target="_blank"
+                >
+                    <img
+                        class="section__item__img"
+                        src="./img/Test3D-Game.png"
+                        alt=""
+                    />
+                    <div class="section__item__contain">
+                        <div class="item__contain__text">
+                            <p class="section__item__title">
+                                Interactive Test 3D
+                            </p>
+                            <p class="section__item__filter">
+                                Game Development
+                            </p>
+                        </div>
+                        <div class="item__contain__imgs">
+                            <img
+                                class="item__contain__skill"
+                                src="./img/unity.png"
+                                alt=""
+                            />
+                            <img
+                                class="item__contain__skill"
+                                src="./img/Csharp.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div
+                class="portfolio__section portfolio__section__ui"
+                id="portfolio__section__ui"
+            >
+                <div class="portfolio__section__item">
+                    <img
+                        class="section__item__img"
+                        src="./img/Flivy1.png"
+                        alt=""
+                    />
+                    <div class="section__item__contain">
+                        <div class="item__contain__text">
+                            <p class="section__item__title">Flivy App</p>
+                            <p class="section__item__filter">UI Design</p>
+                        </div>
+                        <img
+                            class="item__contain__skill"
+                            src="./img/figma.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div class="portfolio__section__item">
+                    <img
+                        class="section__item__img"
+                        src="./img/Flivy2.png"
+                        alt=""
+                    />
+                    <div class="section__item__contain">
+                        <div class="item__contain__text">
+                            <p class="section__item__title">Flivy Web</p>
+                            <p class="section__item__filter">UI Design</p>
+                        </div>
+                        <img
+                            class="item__contain__skill"
+                            src="./img/figma.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div class="portfolio__section__item">
+                    <img
+                        class="section__item__img"
+                        src="./img/Flivy1.png"
+                        alt=""
+                    />
+                    <div class="section__item__contain">
+                        <div class="item__contain__text">
+                            <p class="section__item__title">Flivy App</p>
+                            <p class="section__item__filter">UI Design</p>
+                        </div>
+                        <img
+                            class="item__contain__skill"
+                            src="./img/figma.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div class="portfolio__section__item">
+                    <img
+                        class="section__item__img"
+                        src="./img/Flivy2.png"
+                        alt=""
+                    />
+                    <div class="section__item__contain">
+                        <div class="item__contain__text">
+                            <p class="section__item__title">Flivy Web</p>
+                            <p class="section__item__filter">UI Design</p>
+                        </div>
+                        <img
+                            class="item__contain__skill"
+                            src="./img/figma.png"
+                            alt=""
+                        />
+                    </div>
                 </div>
             </div>
-            <div class="portfolio__section__item">
-                <img class="section__item__img" src="./img/Flivy2.png" alt="">
-                <div class="section__item__contain">
-                    <div class="item__contain__text">
-                        <p class="section__item__title">Flivy Web</p>
-                        <p class="section__item__filter">UI Design</p>
-                    </div>
-                    <img class="item__contain__skill" src="./img/figma.png" alt="">
-                </div>
-            </div>
-            <div class="portfolio__section__item">
-                <img class="section__item__img" src="./img/Flivy1.png" alt="">
-                <div class="section__item__contain">
-                    <div class="item__contain__text">
-                        <p class="section__item__title">Flivy App</p>
-                        <p class="section__item__filter">UI Design</p>
-                    </div>
-                    <img class="item__contain__skill" src="./img/figma.png" alt="">
-                </div>
-            </div>
-            <div class="portfolio__section__item">
-                <img class="section__item__img" src="./img/Flivy2.png" alt="">
-                <div class="section__item__contain">
-                    <div class="item__contain__text">
-                        <p class="section__item__title">Flivy Web</p>
-                        <p class="section__item__filter">UI Design</p>
-                    </div>
-                    <img class="item__contain__skill" src="./img/figma.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact" class="contact">
-        <p class="contact__title">
-            Contact me
-        </p>
-        <input class="contact__name" placeholder="Name *" type="Name">
-        <input class="contact__email" placeholder="Email *" type="Email">
-        <input class="contact__subject" placeholder="Subject *" type="Subject">
+        </section>
+        <section id="contact" class="contact">
+            <p class="contact__title">Contact me</p>
+            <input class="contact__name" placeholder="Name *" type="Name" />
+            <input class="contact__email" placeholder="Email *" type="Email" />
+            <input
+                class="contact__subject"
+                placeholder="Subject *"
+                type="Subject"
+            />
 
-        <textarea placeholder="Message *" class="contact__message" name="" id="" cols="30" rows="10"></textarea>
-        <a href="" class="contact__button">SEND MESSAGE</a>
-
-    </section>
-    <footer class="footer">
-        <a class="footer__social" href="">
-            <img class="footer__social__img" src="./img/linkedin.png" alt="">
-        </a>
-        <a class="footer__social" href="">
-            <img class="footer__social__img" src="./img/behance.png" alt="">
-        </a>
-        <a class="footer__social" href="">
-            <img class="footer__social__img" src="./img/github.png" alt="">
-        </a>
-
-    </footer>
-</body>
-
+            <textarea
+                placeholder="Message *"
+                class="contact__message"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+            ></textarea>
+            <a href="" class="contact__button">SEND MESSAGE</a>
+        </section>
+        <footer class="footer">
+            <a
+                class="footer__social"
+                href="https://www.linkedin.com/in/andres-laverde/"
+                target="_blank"
+            >
+                <img
+                    class="footer__social__img"
+                    src="./img/linkedin.png"
+                    alt=""
+                />
+            </a>
+            <a
+                class="footer__social"
+                href="https://www.behance.net/andreslaverde2"
+                target="_blank"
+            >
+                <img
+                    class="footer__social__img"
+                    src="./img/behance.png"
+                    alt=""
+                />
+            </a>
+            <a
+                class="footer__social"
+                href="https://github.com/JalpGJ"
+                target="_blank"
+            >
+                <img
+                    class="footer__social__img"
+                    src="./img/github.png"
+                    alt=""
+                />
+            </a>
+            <a
+                class="footer__social"
+                href="https://wa.me/573044128432"
+                target="_blank"
+            >
+                <img
+                    class="footer__social__img"
+                    src="./img/whatsapp.png"
+                    alt=""
+                />
+            </a>
+        </footer>
+    </body>
 </html>

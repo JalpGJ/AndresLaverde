@@ -264,6 +264,23 @@ header {
 .portfolio__section__ui {
     display: none;
 }
+#cursor {
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+button {
+    background: transparent;
+    text-align: initial;
+}
 @media (min-width: 768px) {
     .presentation {
         padding: 90px 50px;

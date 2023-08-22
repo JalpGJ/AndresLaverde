@@ -20,7 +20,7 @@
 
     <body>
         <header id="header">
-            <a href="./index.html" id="header__logo" class="header__logo">
+            <a href="#profession" id="header__logo" class="header__logo">
                 AL
             </a>
             <div id="header__boton" class="header__boton">
@@ -66,8 +66,8 @@
             </div>
         </header>
         <section id="profession" class="profession">
-            <p class="profession__title">WEB DEVELOPER</p>
-            <span class="profession__title">|</span>
+            <p class="profession__title" id="text">WEB DEVELOPER</p>
+            <span id="cursor" class="profession__title">|</span>
             <img class="profession__arrow" src="" alt="" />
         </section>
         <section id="presentation" class="presentation">
@@ -477,26 +477,49 @@
                 </a>
             </div>
         </section>
-        <section id="contact" class="contact">
+        <form
+            id="contact"
+            class="contact"
+            action="https://formspree.io/f/xyyqwjok"
+            method="post"
+            target="_blank"
+        >
             <p class="contact__title">Contact me</p>
-            <input class="contact__name" placeholder="Name *" type="Name" />
-            <input class="contact__email" placeholder="Email *" type="Email" />
+            <input
+                class="contact__name"
+                placeholder="Name *"
+                type="text"
+                name="nombre"
+                required
+            />
+            <input
+                class="contact__email"
+                placeholder="Email *"
+                type="Email"
+                name="email"
+                required
+            />
             <input
                 class="contact__subject"
                 placeholder="Subject *"
-                type="Subject"
+                type="text"
+                name="_subject"
+                required
             />
 
             <textarea
                 placeholder="Message *"
                 class="contact__message"
-                name=""
                 id=""
                 cols="30"
                 rows="10"
+                name="message"
+                required
             ></textarea>
-            <a href="" class="contact__button">SEND MESSAGE</a>
-        </section>
+            <button href="" class="contact__button" type="submit" name="submit">
+                SEND MESSAGE
+            </button>
+        </form>
         <footer class="footer">
             <a
                 class="footer__social"

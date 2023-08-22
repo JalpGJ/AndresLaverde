@@ -98,4 +98,36 @@ document.addEventListener("DOMContentLoaded", function () {
         portfolio__filter__web.style.color = "#999999";
         portfolio__filter__ui.style.color = "#292929";
     });
+
+    const textElement = document.getElementById("text");
+    const cursorElement = document.getElementById("cursor");
+    const texts = ["WEB DEVELOPER", "WEB DESIGNER", "ANDRES LAVERDE"];
+
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+        const currentText = texts[textIndex];
+        if (isDeleting) {
+            textElement.textContent = currentText.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            textElement.textContent = currentText.substring(0, charIndex + 1);
+            charIndex++;
+        }
+
+        if (!isDeleting && charIndex === currentText.length) {
+            isDeleting = true;
+            setTimeout(type, 1000);
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % texts.length;
+            setTimeout(type, 200);
+        } else {
+            setTimeout(type, isDeleting ? 50 : 150);
+        }
+    }
+
+    type();
 });

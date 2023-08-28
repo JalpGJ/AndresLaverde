@@ -98,36 +98,100 @@ document.addEventListener("DOMContentLoaded", function () {
         portfolio__filter__web.style.color = "#999999";
         portfolio__filter__ui.style.color = "#292929";
     });
-
+    var idioma = "ingles";
     const textElement = document.getElementById("text");
     const cursorElement = document.getElementById("cursor");
-    const texts = ["WEB DEVELOPER", "WEB DESIGNER", "ANDRES LAVERDE"];
+
+    // const texts = ["DESARROLLADOR WEB", "DISEÑADOR WEB", "ANDRES LAVERDE"];
 
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
 
+    const texts = ["WEB DEVELOPER", "WEB DESIGNER", "ANDRES LAVERDE"];
+    const textsES = ["DESARROLLADOR WEB", "DISEÑADOR WEB", "ANDRES LAVERDE"];
+    if (idioma == "ingles") {
+        type();
+    }
     function type() {
-        const currentText = texts[textIndex];
-        if (isDeleting) {
-            textElement.textContent = currentText.substring(0, charIndex - 1);
-            charIndex--;
-        } else {
-            textElement.textContent = currentText.substring(0, charIndex + 1);
-            charIndex++;
-        }
+        if (idioma == "ingles") {
+            const currentText = texts[textIndex];
+            if (isDeleting) {
+                textElement.textContent = currentText.substring(
+                    0,
+                    charIndex - 1
+                );
+                charIndex--;
+            } else {
+                textElement.textContent = currentText.substring(
+                    0,
+                    charIndex + 1
+                );
+                charIndex++;
+            }
 
-        if (!isDeleting && charIndex === currentText.length) {
-            isDeleting = true;
-            setTimeout(type, 1000);
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            textIndex = (textIndex + 1) % texts.length;
-            setTimeout(type, 200);
-        } else {
-            setTimeout(type, isDeleting ? 50 : 150);
+            if (!isDeleting && charIndex === currentText.length) {
+                isDeleting = true;
+                setTimeout(type, 1000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+                setTimeout(type, 200);
+            } else {
+                setTimeout(type, isDeleting ? 50 : 150);
+            }
         }
     }
 
-    type();
+    function typeES() {
+        if (idioma == "español") {
+            const currentText = textsES[textIndex];
+            if (isDeleting) {
+                textElement.textContent = currentText.substring(
+                    0,
+                    charIndex - 1
+                );
+                charIndex--;
+            } else {
+                textElement.textContent = currentText.substring(
+                    0,
+                    charIndex + 1
+                );
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentText.length) {
+                isDeleting = true;
+                setTimeout(typeES, 1000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % textsES.length;
+                setTimeout(typeES, 200);
+            } else {
+                setTimeout(typeES, isDeleting ? 50 : 150);
+            }
+        }
+    }
+
+    var english = document.getElementById("english");
+    var spanish = document.getElementById("spanish");
+    var counter = 0;
+
+    spanish.addEventListener("click", function () {
+        counter++;
+        idioma = "español";
+        const textsES = [
+            "DESARROLLADOR WEB",
+            "DISEÑADOR WEB",
+            "ANDRES LAVERDE",
+        ];
+        typeES();
+    });
+    english.addEventListener("click", function () {
+        counter++;
+        idioma = "ingles";
+        const texts = ["WEB DEVELOPER", "WEB DESIGNER", "ANDRES LAVERDE"];
+
+        type();
+    });
 });

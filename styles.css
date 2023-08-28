@@ -281,6 +281,39 @@ button {
     background: transparent;
     text-align: initial;
 }
+.translate {
+    position: fixed;
+    width: 100px;
+    height: 35px;
+    background-color: black;
+    bottom: 10px;
+    /* right: 10px; */
+    left: 20px;
+    display: flex;
+    border-radius: 50px;
+}
+.translate__ESP {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    font-family: Hind;
+    font-size: 14px;
+    width: 50%;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50px 0 0 50px;
+}
+.translate__ENG {
+    display: flex;
+    align-items: center;
+    font-family: Hind;
+    font-size: 14px;
+    width: 50%;
+    color: white;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 0px 50px 50px 0;
+}
 @media (min-width: 768px) {
     .presentation {
         padding: 90px 50px;
@@ -405,6 +438,9 @@ button {
     .contact__button {
         font-size: 14px;
     }
+    .translate {
+        left: 50px;
+    }
 }
 @media (min-width: 1300px) {
     .section__item__img {
@@ -432,5 +468,8 @@ button {
     }
     .contact {
         padding: 140px 255px 0 255px;
+    }
+    .translate {
+        left: 75px;
     }
 }

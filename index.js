@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let charIndex = 0;
     let isDeleting = false;
 
-    const texts = ["FULL-STACK DEVELOPER", "DATA ANALYST", "ANDRES LAVERDE"];
+    const texts = ["WEB DEVELOPER", "WEB DESIGNER", "ANDRES LAVERDE"];
     const textsES = ["DESARROLLADOR WEB", "DISEÑADOR WEB", "ANDRES LAVERDE"];
     if (idioma == "ingles") {
         type();
